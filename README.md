@@ -23,7 +23,7 @@ https://docs.google.com/spreadsheets/d/1E64wvkk2v_QdicXbSs6mfdoupKG1As8w3qRO5PDq
 
 ## Лингвистический анализ результатов статистического анализа
 Результаты теста хи-квадрат. Корреляция выбора части речи субъекта в зависимости от порядка слов
-
+```
 data = read.csv(file='/Users/viktoriapirogova/Desktop/xy.csv', sep=',', header = T)
 xy.no.n <- sum(data[data$order =='xy.no',]$arg0.part)
 xy.no.pr <- nrow(data[data$order =='xy.no',]) - xy.no.n
@@ -35,18 +35,18 @@ xy.no <- c(noun=xy.no.n, pronoun=xy.no.pr)
 no.xy <- c(noun=no.xy.n, pronoun=no.xy.pr)
 df = as.data.frame(rbind(xy.no, no.xy))
 chisq.test(df)
-
+```
 data:  df
 X-squared = 12.248, df = 1, p-value = 0.0004658
-
-      noun pronoun
+```
+       noun     pronoun
 xy.no   40      21
 no.xy   71       7
-
+```
 Поскольку получившееся значение p-value < 0.001, это позволяет нам сделать вывод о том, что тип конструкции связан с частью речи первой переменной: конструкция "Нет Х-у У-а" больше тяготеет к сочетанию с существительными, чем конструкция "Х-у нет У-а".
 
 Есть ли корреляция между частью речи и числом?
-
+```
 data = read.csv(file='/Users/viktoriapirogova/Desktop/xy.csv', sep=',', header = T)
 head(data)
 
@@ -61,7 +61,7 @@ n <- c(sg=no.sg, pl=no.pl)
 df = as.data.frame(rbind(noun, pronoun))
 chisq.test(df)
 df
-
+```
 X-squared = 11.342, 
 df = 1, 
 p-value =  0.542 > 0.005.

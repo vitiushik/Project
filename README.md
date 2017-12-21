@@ -21,8 +21,20 @@ https://docs.google.com/spreadsheets/d/1E64wvkk2v_QdicXbSs6mfdoupKG1As8w3qRO5PDq
 ![Снимок экрана 2017-12-21 в 11.10.21](https://github.com/vitiushik/Project/blob/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202017-12-21%20%D0%B2%2011.10.21.png "Снимок экрана 2017-12-21 в 11.10.21")
 
 
-## Содержательный лингвистический анализ результатов статистического анализа
-Результаты теста хи-квадрат
+## Лингвистический анализ результатов статистического анализа
+Результаты теста хи-квадрат. Корреляция выбора части речи субъекта в зависимости от порядка слов
+
+> data = read.csv(file='/Users/viktoriapirogova/Desktop/xy.csv', sep=',', header = T)
+> xy.no.n <- sum(data[data$order =='xy.no',]$arg0.part)
+> xy.no.pr <- nrow(data[data$order =='xy.no',]) - xy.no.n
+> 
+> no.xy.n <- sum(data[data$order =='no.xy',]$arg0.part)
+> no.xy.pr <- nrow(data[data$order =='no.xy',]) - no.xy.n
+> 
+> xy.no <- c(noun=xy.no.n, pronoun=xy.no.pr)
+> no.xy <- c(noun=no.xy.n, pronoun=no.xy.pr)
+> df = as.data.frame(rbind(xy.no, no.xy))
+> chisq.test(df)
 
 data:  df
 X-squared = 12.248, df = 1, p-value = 0.0004658

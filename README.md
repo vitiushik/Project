@@ -19,7 +19,7 @@ https://docs.google.com/spreadsheets/d/1E64wvkk2v_QdicXbSs6mfdoupKG1As8w3qRO5PDq
 ![Снимок экрана 2017-12-21 в 11.07.32](https://github.com/vitiushik/Project/blob/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202017-12-21%20%D0%B2%2011.07.32.png "Снимок экрана 2017-12-21 в 11.07.32")
 
 ![Снимок экрана 2017-12-21 в 11.10.21]
-(https://raw.githubusercontent.com/vitiushik/Project/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202017-12-21%20%D0%B2%2011.10.21.png "Снимок экрана 2017-12-21 в 11.10.21")
+(https://github.com/vitiushik/Project/blob/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202017-12-21%20%D0%B2%2011.10.21.png "Снимок экрана 2017-12-21 в 11.10.21")
 
 
 ## Содержательный лингвистический анализ результатов статистического анализа
